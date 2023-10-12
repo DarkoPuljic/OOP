@@ -13,14 +13,14 @@ public class Point {
 			this.x=x;
 			this.y=y;
 		}
-	public Point(int x , int y, boolean selectd) {
+	public Point(int x , int y, boolean selected) {
 		this.x=x;
 		this.y=y;
 		this.selected=selected;
 	}
 	public double distance(int x2, int y2) {
 		int dx=x2-x;
-		int dy= y2-y;
+		int dy=y2-y;
 		double d= Math.sqrt(dx*dx+dy*dy);
 		return d;
 	}
