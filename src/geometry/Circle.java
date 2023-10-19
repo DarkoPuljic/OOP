@@ -25,6 +25,26 @@ public Circle() {
 		return resenje;
 		
 	}
+	public boolean equals(Object obj) {
+
+		if(obj instanceof Point) {
+		Circle p = (Circle)obj;
+
+		if(p.radius == this.radius && p.center==this.center)
+
+		return true;
+
+		else
+
+		return false;
+
+		} else {
+
+		return false;
+
+		}
+
+		}
 	public int getRadius() {
 		return radius;
 	}

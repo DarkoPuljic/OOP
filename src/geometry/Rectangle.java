@@ -24,7 +24,26 @@ public Rectangle() {
 		int resenje=(2*duzina2) + (2*sirina2);
 		return resenje;
 	}
-	
+	public boolean equals(Object obj) {
+
+		if(obj instanceof Rectangle) {
+		Rectangle p = (Rectangle)obj;
+
+		if(p.duzina == this.duzina && p.sirina==this.sirina)
+
+		return true;
+
+		else
+
+		return false;
+
+		} else {
+
+		return false;
+
+		}
+
+		}
 	
 	public int getDuzina() {
 		return duzina;

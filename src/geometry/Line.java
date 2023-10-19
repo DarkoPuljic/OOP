@@ -34,6 +34,26 @@ public class Line {
 		
 		
 	}
+	public boolean equals(Object obj) {
+
+		if(obj instanceof Line) {
+		Line p = (Line)obj;
+
+		if(p.startPoint == this.startPoint && p.endPoint==this.endPoint)
+
+		return true;
+
+		else
+
+		return false;
+
+		} else {
+
+		return false;
+
+		}
+
+		}
 
 	public Point getStartPoint() {
 		return startPoint;

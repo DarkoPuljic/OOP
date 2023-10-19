@@ -24,6 +24,26 @@ public class Point {
 		double d= Math.sqrt(dx*dx+dy*dy);
 		return d;
 	}
+	public boolean equals(Object obj) {
+
+		if(obj instanceof Point) {
+		Point p = (Point)obj;
+
+		if(p.x == this.x && p.y==this.y)
+
+		return true;
+
+		else
+
+		return false;
+
+		} else {
+
+		return false;
+
+		}
+
+		}
 	
 	public int getX() {
 		return x;
