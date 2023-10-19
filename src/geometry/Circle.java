@@ -27,24 +27,21 @@ public Circle() {
 	}
 	public boolean equals(Object obj) {
 
-		if(obj instanceof Point) {
-		Circle p = (Circle)obj;
+		if (obj instanceof Line) {
+			Circle r = (Circle) obj;
 
-		if(p.radius == this.radius && p.center==this.center)
+			if (r.radius== this.radius && r.center.equals(this.center)) {
+				return true;
 
-		return true;
+			} else {
 
-		else
+				return false;
 
-		return false;
-
-		} else {
-
-		return false;
-
+			}
 		}
-
-		}
+			return false;
+		
+	}
 	public int getRadius() {
 		return radius;
 	}

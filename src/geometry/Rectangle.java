@@ -1,7 +1,6 @@
 package geometry;
 
 public class Rectangle {
-	private int pravougaonik;
 	private int duzina;
 	private int sirina;
 	private Point tacka_ugla;
@@ -27,9 +26,9 @@ public Rectangle() {
 	public boolean equals(Object obj) {
 
 		if(obj instanceof Rectangle) {
-		Rectangle p = (Rectangle)obj;
+		Rectangle d = (Rectangle)obj;
 
-		if(p.duzina == this.duzina && p.sirina==this.sirina)
+		if(d.duzina == this.duzina && d.sirina==this.sirina && d.tacka_ugla.equals(this.tacka_ugla))
 
 		return true;
 
@@ -68,12 +67,6 @@ public Rectangle() {
 	}
 	public void setSelected(boolean selected) {
 		this.selected = selected;
-	}
-	public int getPravougaonik() {
-		return pravougaonik;
-	}
-	public void setPravougaonik(int pravougaonik) {
-		this.pravougaonik = pravougaonik;
 	}
 	
 }

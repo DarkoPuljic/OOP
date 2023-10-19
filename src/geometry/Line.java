@@ -22,38 +22,36 @@ public class Line {
 
 	public double lenght(Point startPoint2, Point endPoint2) {
 
-	/*int lstart = startPoint2 - startPoint.getX();
-		int lend = endPoint2 - endPoint.getY();
+		/*
+		 * int lstart = startPoint2 - startPoint.getX(); int lend = endPoint2 -
+		 * endPoint.getY(); double duzina = Math.sqrt(lstart * lstart + lend * lend);
+		 * return duzina;
+		 */
+		int lstart = endPoint2.getX() - startPoint2.getX();
+		int lend = endPoint2.getY() - startPoint2.getY();
 		double duzina = Math.sqrt(lstart * lstart + lend * lend);
 		return duzina;
-		*/
-		int lstart= endPoint2.getX()-startPoint2.getX();
-		int lend= endPoint2.getY()-startPoint2.getY();
-		double duzina = Math.sqrt(lstart*lstart+lend*lend);
-		return duzina;
-		
-		
+
 	}
+
 	public boolean equals(Object obj) {
 
-		if(obj instanceof Line) {
-		Line p = (Line)obj;
+		if (obj instanceof Line) {
+			Line l = (Line) obj;
 
-		if(p.startPoint == this.startPoint && p.endPoint==this.endPoint)
+			if (l.startPoint.equals(this.startPoint)
+					&& l.endPoint.equals(this.endPoint)) {
+				return true;
 
-		return true;
+			} else {
 
-		else
+				return false;
 
-		return false;
-
-		} else {
-
-		return false;
-
+			}
 		}
-
-		}
+			return false;
+		
+	}
 
 	public Point getStartPoint() {
 		return startPoint;
