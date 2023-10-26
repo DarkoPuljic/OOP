@@ -1,6 +1,8 @@
 package geometry;
 
-public class Rectangle {
+import java.awt.Graphics;
+
+public class Rectangle extends Shape {
 	private int duzina;
 	private int sirina;
 	private Point tacka_ugla;
@@ -43,7 +45,7 @@ public Rectangle() {
 		}
 
 		}
-	
+
 	public int getDuzina() {
 		return duzina;
 	}
@@ -67,6 +69,16 @@ public Rectangle() {
 	}
 	public void setSelected(boolean selected) {
 		this.selected = selected;
+	}
+	@Override
+	public void draw(Graphics g) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public boolean contains(int x, int y) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
 }

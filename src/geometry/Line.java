@@ -1,6 +1,8 @@
 package geometry;
 
-public class Line {
+import java.awt.Graphics;
+
+public class Line extends Shape {
 	private Point startPoint;
 	private Point endPoint;
 	private Point selected;
@@ -52,6 +54,10 @@ public class Line {
 			return false;
 		
 	}
+	public boolean contains(int x, int y) {
+		Point newPoint= new Point (x,y);
+		return this.lenght(startPoint, newPoint)<=2 || this.lenght(endPoint, newPoint) <=2;
+	}
 
 	public Point getStartPoint() {
 		return startPoint;
@@ -75,5 +81,11 @@ public class Line {
 
 	public void setSelected(Point selected) {
 		this.selected = selected;
+	}
+
+	@Override
+	public void draw(Graphics g) {
+		// TODO Auto-generated method stub
+		
 	}
 }

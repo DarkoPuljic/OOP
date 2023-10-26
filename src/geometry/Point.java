@@ -1,6 +1,8 @@
 package geometry;
 
-public class Point {
+import java.awt.Graphics;
+
+public class Point extends Shape {
 
 	private int x;
 	private int y;
@@ -48,6 +50,11 @@ public class Point {
 		}
 
 	}
+	
+	public boolean contains(int x, int y) {
+		return this.distance(x,y)<=2;
+	}
+	
 
 	public int getX() {
 		return x;
@@ -71,6 +78,12 @@ public class Point {
 
 	public void setSelected(boolean selected) {
 		this.selected = selected;
+	}
+
+	@Override
+	public void draw(Graphics g) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
