@@ -45,6 +45,9 @@ public Rectangle() {
 		}
 
 		}
+	public boolean contains(int x, int y) {
+		return (x >= tacka_ugla.getX() && x <= tacka_ugla.getX() + sirina 
+				&& y >= tacka_ugla.getY() && y <= tacka_ugla.getY() + visina);
 
 	public int getDuzina() {
 		return duzina;
