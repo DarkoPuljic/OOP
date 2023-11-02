@@ -46,8 +46,8 @@ public Rectangle() {
 
 		}
 	public boolean contains(int x, int y) {
-		return (x >= tacka_ugla.getX() && x <= tacka_ugla.getX() + sirina 
-				&& y >= tacka_ugla.getY() && y <= tacka_ugla.getY() + visina);
+		return (x>= tacka_ugla.getX() && tacka_ugla.getX() + duzina <=x && y>= tacka_ugla.getY() && tacka_ugla.getY() + sirina <=y );
+	}
 
 	public int getDuzina() {
 		return duzina;
@@ -78,8 +78,15 @@ public Rectangle() {
 		// TODO Auto-generated method stub
 		
 	}
+	@Override
+	public void moveTo(int x, int y) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void moveBy(int byX, int byY) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
-		
-
-
