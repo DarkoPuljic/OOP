@@ -91,13 +91,13 @@ public class Line extends Shape {
 
 	@Override
 	public void moveTo(int x, int y) {
-		// TODO Auto-generated method stub
-		
+		this.startPoint.moveTo(x,y);
+		this.endPoint.moveTo(x,y);
 	}
 
 	@Override
 	public void moveBy(int byX, int byY) {
-		// TODO Auto-generated method stub
-		
+		this.startPoint.moveBy(byX, byY);
+		this.endPoint.moveBy(byX, byY);
 	}
 }
