@@ -2,7 +2,7 @@ package geometry;
 
 import java.awt.Graphics;
 
-public abstract class Shape {
+public abstract class Shape implements Moveable{
 	protected boolean selected;
 	public abstract boolean contains(int x, int y);
 	public abstract void draw(Graphics g);
