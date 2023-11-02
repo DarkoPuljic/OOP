@@ -78,11 +78,6 @@ public Rectangle() {
 		// TODO Auto-generated method stub
 		
 	}
-	@Override
-	public boolean contains(int x, int y) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 	
 }
 		
