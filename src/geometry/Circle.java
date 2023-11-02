@@ -73,12 +73,12 @@ public Circle() {
 	}
 	@Override
 	public void moveTo(int x, int y) {
-		// TODO Auto-generated method stub
+		this.center.moveTo(x,y);
 		
 	}
+
 	@Override
 	public void moveBy(int byX, int byY) {
-		// TODO Auto-generated method stub
-		
+		this.center.moveBy(byX, byY);		
 	}
 }
