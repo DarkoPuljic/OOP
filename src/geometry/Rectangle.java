@@ -80,13 +80,12 @@ public Rectangle() {
 	}
 	@Override
 	public void moveTo(int x, int y) {
-		// TODO Auto-generated method stub
+		this.tacka_ugla.moveTo(x, y);
 		
 	}
 	@Override
 	public void moveBy(int byX, int byY) {
-		// TODO Auto-generated method stub
-		
+			this.tacka_ugla.moveBy(byX, byY);
 	}
 	
 }
