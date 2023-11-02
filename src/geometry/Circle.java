@@ -45,7 +45,6 @@ public Circle() {
 		
 	}
 	public boolean contains(int x, int y) {
-		Point center2= new Point (x,y);
 		return (center.distance(x,y)<=radius);
 	}
 	
@@ -72,5 +71,14 @@ public Circle() {
 		// TODO Auto-generated method stub
 		
 	}
+	@Override
+	public void moveTo(int x, int y) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void moveBy(int byX, int byY) {
+		// TODO Auto-generated method stub
+		
+	}
 }
-	
